@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Image Editor App</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <section class="container">
+        <header>
+            <h3>Online Image Editor App</h3>
+            <span class="toggle-btn">&#x1F319</span>
+        </header>
+        <div class="wrapper">
+            <div class="editing-tools">
+                <div class="inner">
+                    <div>
+                        <h4>Filters</h4>
+                        <div class="filter-container">
+                            <button name="brightness">Brightness</button>
+                            <button name="saturate">Saturation</button>
+                            <button name="invert">Invertion</button>
+                            <button name="grayscale">GrayScale</button>
+                            <button name="sepia">Sepia</button>
+                            <button name="contrast">Contrast</button>
+                        </div>
+                    </div>
+
+                    <div id="selected-tool-indicator">
+                        <div class="display-property">
+                            <p>Select Filter</p>
+                            <span>0%</span>
+                        </div>
+                        <div class="progress">
+                            <input type="range" value="0" name="" id="" min="0" max="100">
+                        </div>
+                    </div>
+
+                    <div class="effects">
+                        <h4>Rotate & Flip</h4>
+                        <div class="rotate-flip-options">
+                            <button class="rotate-btns">&#8635</button>
+                            <button class="rotate-btns">&#8634</button>
+                            <button class="flip-btns">&#8644</button>
+                            <button class="flip-btns">&#8645</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button class="reset">Reset Filters</button>
+                    <button class="apply-btn">Apply Filter</button>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="" alt="" id="img">
+                <p>Upload an image to Edit</p>
+            </div>
+        </div>
+        <div class="btns">
+            <input type="file" name="image" id="input" style="display: none;">
+            <button id="Upload-btn">Upload Image</button>
+            <button id="Download-btn">Download</button>
+        </div>
+    </section>
+    <script src="functionality.js"></script>
+</body>
+
+</html>
