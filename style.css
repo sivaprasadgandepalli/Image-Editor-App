@@ -60,7 +60,7 @@ header span {
 }
 
 .container .editing-tools {
-    flex: 1;
+    flex: 1 0 auto;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -76,18 +76,20 @@ header span {
 }
 
 .container .image-container {
-    flex: 2;
+    flex:2 0 260px;
     position: relative;
     height: inherit;
     background-color: #3d3d3d;
     display: flex;
     flex-direction: column;
     height: 297px;
+    width:100%;
     overflow: hidden;
     border: 1px solid rgb(72, 72, 72);
 }
 
 .container .image-container img {
+    flex-shrink:0;
     width: 100%;
     height: 100%;
     display: none;
